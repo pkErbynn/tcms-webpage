@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/projects.css">
 
     <title>Hello, world!</title>
 
@@ -61,87 +62,100 @@
             }
         }
 
-        .category-navbar ul{
-	padding: 0px;
-	list-style-type: none;  /*removes bullet*/
-	text-align: center;		/*placed at center*/	
-}
-.category-navbar ul li{
-	display: inline;	/*makes it horizontal*/
-	background-color: #404040;
-	padding: 8px;	/*necessary*/
-}
-.category-navbar ul li a{
-	text-decoration: none;	/*removes underline*/
-	padding: .2em 1em;
-	color: #fff;
-}
-.category-navbar ul li a:hover{
-	color: #404040;
-	background-color: white;
-}
+        .category-navbar ul {
+            padding: 0px;
+            list-style-type: none;
+            /*removes bullet*/
+            text-align: center;
+            /*placed at center*/
+        }
+
+        .category-navbar ul li {
+            display: inline;
+            /*makes it horizontal*/
+            background-color: #404040;
+            padding: 8px;
+            /*necessary*/
+        }
+
+        .category-navbar ul li a {
+            text-decoration: none;
+            /*removes underline*/
+            padding: .2em 1em;
+            color: #fff;
+        }
+
+        .category-navbar ul li a:hover {
+            color: #404040;
+            background-color: white;
+        }
+       
     </style>
 </head>
 
 <body>
-<div>
+    <div>
         <ul class="topnav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="clients.html">Clients</a></li>
-                <li><a class="active" href="projects.html">Projects</a></li>
-              </ul>
-</div>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a class="active" href="projects.html">Projects</a></li>
+        </ul>
+    </div>
 
     <div><br>
         <div class="category-navbar">
-                <ul>
-                    <li><a href="projectDetails.html">Project Details</a></li>
-                    <li><a href="#tchen">Add Project</a></li>
-                </ul>
+            <ul>
+                <li><a href="projectsDetails.html">Project Details</a></li>
+                <li><a href="addProjects.html">Add Project</a></li>
+            </ul>
         </div>
-        
+
+    </div>
+
+    <br>
+    <div id="project-list">
+        <table class="table table-striped center">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>POJO</td>
+                    <td>Plain Old Java Object</td>
+                    <td><a href="#">Project details</a></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>tcms java</td>
+                    <td>turntable client mgmnt system in java</td>
+                    <td><a href="#">Project details</a></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>tcms scala</td>
+                    <td>turntabl project mgmt system in Scal</td>
+                    <td><a href="#">Project details</a></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>micro-services</td>
+                    <td>project micro-service on heroku</td>
+                    <td><a href="#">Project details</a></td>
+
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 
-    <div><br>
-            <table class="table table-striped">
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Description</th>
-                        <th scope="col">Owner</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                      </tr>
-                    </tbody>
-                  </table>
-    </div>
-
-
-
-
-
-
-</body>
 
 
 
